@@ -2,8 +2,10 @@
 
 :root {
     --bg-gray: #ddd;
-    --color-primary: #4d41c0;
+    --color-primary: #FFE734;
     --white: #fff;
+    --text-gray: #4a4a4a;
+    --my-black: #231D19;
 }
 
 * {
@@ -17,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: var(--color-primary);
-    color: var(--white);
+    color: var(--my-black);
     height: 60px;
     display: flex;
     align-items: center;
@@ -55,4 +57,50 @@ nav a {
 
 .dsmovie-contato-container img {
     margin-right: 10px;
+    color: var(--my-black);
+}
+
+.dsmovie-card {
+    width: 360px;
+    height: 400px;
+    ;
+}
+
+.dsmovie-card img {
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+}
+
+#dsmovie-lista-de-cards {
+    padding: 40px 0;
+}
+
+.dsmovie-descricao-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 20px 0;
+    background-color: var(--white);
+    border-radius: 0 0 14px 14px;
+    
+}
+
+.dsmovie-descricao-card h3 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
+   
+}
+
+.dsmovie-botao, .dsmovie-botao:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--my-black);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
 }
