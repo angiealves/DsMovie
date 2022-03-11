@@ -78,7 +78,55 @@ nav a {
 }
 
 #dsmovie-lista-de-cards {
-    padding: 40px 10px;
+    padding: 0 10px;
+}
+
+.dsmovie-container-da-paginacao {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-caixa-paginacao {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.dsmovie-caixa-paginacao p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-gray)
+}
+
+.dsmovie-caixa-paginacao button {
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    border-color: var(--color-primary);
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-caixa-paginacao button img {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(99%) saturate(1558%) hue-rotate(326deg) brightness(106%) contrast(105%);
+}
+
+.dsmovie-caixa-paginacao button:disabled {
+    border: 2px solid;
+    border-color: var(--text-cinza);
+}
+
+.dsmovie-caixa-paginacao button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-inverter-horizontal {
+    transform: rotate(180deg);
 }
 
 .dsmovie-descricao-card {
